@@ -13,6 +13,7 @@
 
 body {
     box-sizing: border-box;
+    margin: 0;
     font-family: var(--font-principal);
     background-color: var(--cor-background-primaria);
 }
