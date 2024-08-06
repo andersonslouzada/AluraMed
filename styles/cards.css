@@ -1,0 +1,49 @@
+.consultas-dia {
+    margin-left: 1.35rem;
+}
+
+.consultas-card {
+    margin: 0rem 1.35rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--cor-background-secundaria);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-paciente {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.35rem;
+    border-bottom: solid 1px var(--cor-bordas);
+}
+
+.paciente-descricao {
+    margin: 0 auto 0 1.35rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.paciente-nome {
+    padding-bottom: .2rem;
+    margin: 0;
+    width: 100%;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+}
+
+.paciente-consulta {
+    margin: 0;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.consulta-tipo {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--cor-secundaria);
+}
