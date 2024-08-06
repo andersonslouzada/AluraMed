@@ -3,10 +3,10 @@
 }
 
 .consultas-card {
-    margin: 0rem 1.35rem;
+    margin: 0rem 1.35rem 1.35rem 1.35rem;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 1.35rem;
     border-radius: 1rem;
     background-color: var(--cor-background-secundaria);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -46,4 +46,37 @@
     margin: 0;
     font-size: 1rem;
     color: var(--cor-secundaria);
+}
+
+.consulta-tempo {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cor-primaria);
+}
+
+.consulta-botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.consulta-botoes-video, .consulta-botoes-audio {
+    padding: 1.1rem 1.35rem;
+    border-radius: .7rem;
+    font-family: var(--font-principal);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.consulta-botoes-video {
+    background-color: var(--cor-botao-video);
+    border: solid 1px var(--cor-botao-video);
+    color: var(--cor-terciaria);
+}
+
+.consulta-botoes-audio {
+    background-color: var(--cor-background-secundaria);
+    border: solid 1px var(--cor-bordas);
+    color: var(--cor-primaria);
 }
