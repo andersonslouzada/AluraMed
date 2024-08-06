@@ -66,7 +66,7 @@
     border-radius: .7rem;
     font-family: var(--font-principal);
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
 }
 
 .consulta-botoes-video {
@@ -79,4 +79,16 @@
     background-color: var(--cor-background-secundaria);
     border: solid 1px var(--cor-bordas);
     color: var(--cor-primaria);
+}
+
+.consulta-botoes-endereco {
+    width: 100%;
+    padding: 1.1rem 0;
+    border-radius: .7rem;
+    border: solid 1px var(--cor-botao-endereco);
+    font-family: var(--font-principal);
+    font-weight: 500;
+    font-size: 1.15rem;
+    color: var(--cor-terciaria);
+    background-color: var(--cor-botao-endereco);
 }
