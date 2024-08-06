@@ -96,6 +96,7 @@
 @media  screen and (min-width: 768px) {
     .consultas-container {
         display: flex;
+        justify-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 1.35rem;
@@ -116,6 +117,29 @@
 
     .consulta-botoes {
         gap: 0;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .consultas-card {
+        width: 25%;
+    }
+
+    .card-img {
+        margin-right: .7rem;
+    }
+
+    .paciente-nome {
+        font-size: 1.5rem;
+    }
+
+    .consulta-tempo {
+        font-size: 1.15rem;
+    }
+
+    .consulta-botoes-endereco, .consulta-botoes-video, .consulta-botoes-audio {
+        font-size: 1.35rem;
     }
     
 }
