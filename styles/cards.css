@@ -121,7 +121,7 @@
     
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
     .consultas-card {
         width: 25%;
     }
