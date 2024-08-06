@@ -1,0 +1,145 @@
+.consultas-dia {
+    margin: 2.7rem 0 .7rem 1.35rem;
+}
+
+.consultas-card {
+    margin: 0rem 1.35rem 1.35rem 1.35rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.35rem;
+    border-radius: 1rem;
+    background-color: var(--cor-background-secundaria);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-paciente {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.35rem;
+    border-bottom: solid 1px var(--cor-bordas);
+}
+
+.paciente-descricao {
+    margin: 0 auto 0 1.35rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.paciente-nome {
+    padding-bottom: .2rem;
+    margin: 0;
+    width: 100%;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+}
+
+.paciente-consulta {
+    margin: 0;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.consulta-tipo {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--cor-secundaria);
+}
+
+.consulta-tempo {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cor-primaria);
+}
+
+.consulta-botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.consulta-botoes-video, .consulta-botoes-audio {
+    padding: 1.1rem 1.35rem;
+    border-radius: .7rem;
+    font-family: var(--font-principal);
+    font-weight: 500;
+    font-size: 1.15rem;
+}
+
+.consulta-botoes-video {
+    background-color: var(--cor-botao-video);
+    border: solid 1px var(--cor-botao-video);
+    color: var(--cor-terciaria);
+}
+
+.consulta-botoes-audio {
+    background-color: var(--cor-background-secundaria);
+    border: solid 1px var(--cor-bordas);
+    color: var(--cor-primaria);
+}
+
+.consulta-botoes-endereco {
+    width: 100%;
+    padding: 1.1rem 0;
+    border-radius: .7rem;
+    border: solid 1px var(--cor-botao-endereco);
+    font-family: var(--font-principal);
+    font-weight: 500;
+    font-size: 1.15rem;
+    color: var(--cor-terciaria);
+    background-color: var(--cor-botao-endereco);
+}
+
+@media  screen and (min-width: 768px) {
+    .consultas-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.35rem;
+    }
+
+    .consultas-card {
+        width: 40%;
+    }
+
+    .card-paciente {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .paciente-descricao {
+        margin: 0;
+    }
+
+    .consulta-botoes {
+        gap: 0;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .consultas-card {
+        width: 25%;
+    }
+
+    .card-img {
+        margin-right: .7rem;
+    }
+
+    .paciente-nome {
+        font-size: 1.5rem;
+    }
+
+    .consulta-tempo {
+        font-size: 1.15rem;
+    }
+
+    .consulta-botoes-endereco, .consulta-botoes-video, .consulta-botoes-audio {
+        font-size: 1.35rem;
+    }
+    
+}

@@ -1,0 +1,18 @@
+.cabecalho {
+    display: flex;
+    margin: 2.7em 0 1.7rem 1.35em;
+    gap: 1.35rem;
+}
+
+.descricao-titulo {
+    margin-bottom: 0;
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+}
+
+.descricao-texto {
+    margin-top: 0;
+    font-size: 1.15rem;
+    color: var(--cor-secundaria);
+}
