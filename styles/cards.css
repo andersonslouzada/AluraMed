@@ -92,3 +92,30 @@
     color: var(--cor-terciaria);
     background-color: var(--cor-botao-endereco);
 }
+
+@media  screen and (min-width: 768px) {
+    .consultas-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.35rem;
+    }
+
+    .consultas-card {
+        width: 40%;
+    }
+
+    .card-paciente {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .paciente-descricao {
+        margin: 0;
+    }
+
+    .consulta-botoes {
+        gap: 0;
+    }
+    
+}
