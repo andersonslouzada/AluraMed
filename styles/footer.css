@@ -38,19 +38,81 @@
 }
 
 .rodape-botao {
-    text-align: center;
+    width: 56px;
+    height: 56px;
     position: fixed;
     right: 3%;
-    bottom: 10%;
+    text-align: center;
     border-radius: 50%;
     border: none;
     background-color: var(--cor-botao-endereco);
     box-shadow: 0px 4px 16px 0px #4894FF80;
 }
 
-.botao-rodape__imagem {
-    padding: 1.5rem 1.5rem;
+.botoes-escondidos, .container__botao {
+    display: none;
 }
+
+.mais {
+    bottom: 10%;
+    background-image: url('../assets/icone-mais.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container__botao:checked~.botoes-escondidos {
+    display: block;
+    
+}
+
+.remoto {
+    bottom: 17%;
+}
+
+.local {
+    bottom: 24%;
+}
+
+.botao-adicional {
+    position: fixed;
+    right: 25%;
+    background-color: var(--cor-background-secundaria);
+    border-radius: 1rem;
+    border: none;
+    padding: 2px 8px;
+    font-family: var(--font-principal);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cor-primaria);
+
+}
+
+.adicional-local {
+    bottom: 26%;
+}
+
+.adicional-remoto {
+    bottom: 19%;
+}
+
+.overlay {
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+
+  .container__botao:checked~.overlay {
+    display: block;
+  }
+
+  .container__botao:checked~.mais {
+    z-index: 2;
+  }
 
 @media screen and (min-width: 768px) {
     .rodape__lista {
