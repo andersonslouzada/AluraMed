@@ -75,7 +75,7 @@
 
 .botao-adicional {
     position: fixed;
-    right: 25%;
+    right: 140px;
     background-color: var(--cor-background-secundaria);
     border-radius: 1rem;
     border: none;
