@@ -4,6 +4,12 @@
     gap: 1.35rem;
 }
 
+.cabecalho-img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+
 .descricao-titulo {
     margin-bottom: 0;
     font-size: 1.65rem;
