@@ -1,12 +1,13 @@
 .cabecalho {
     display: flex;
-    margin: 2.7em 0 1.7rem 1.35em;
+    align-items: center;
+    margin: 2em 0 1rem 1.35em;
     gap: 1.35rem;
 }
 
-.cabecalho-img {
-    width: 6rem;
-    height: 6rem;
+.cabecalho-img {    
+    max-width: 30%;
+    max-height: 100%;
     border-radius: 50%;
 }
 
