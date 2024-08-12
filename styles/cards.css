@@ -1,7 +1,6 @@
 .main {
     position: relative;
     padding-bottom: 60px;
-
 }
 
 .consultas-dia {
@@ -131,11 +130,19 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .main {
+        margin: 0 0 0 250px;
+    }
+
     .consultas-card {
         width: 25%;
     }
 
     .card-img {
         margin-right: .7rem;
+    }
+
+    .paciente-nome, .consulta-tipo, .consulta-tempo {
+        font-size: 1rem;
     }
 }
