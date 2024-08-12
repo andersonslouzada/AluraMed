@@ -120,3 +120,9 @@
         gap: 2rem;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .rodape__lista {
+        display: none;
+    }
+}

@@ -1,7 +1,6 @@
 .main {
     position: relative;
     padding-bottom: 60px;
-
 }
 
 .consultas-dia {
@@ -27,8 +26,8 @@
 }
 
 .card-img {
-    width: 3.5rem;
-    height: 3.5rem;
+    max-width: 20%;
+    max-height: 100%;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -43,7 +42,7 @@
     padding-bottom: .2rem;
     margin: 0;
     width: 100%;
-    font-size: 1.15rem;
+    font-size: .85rem;
     font-weight: 700;
     color: var(--cor-primaria);
 }
@@ -57,12 +56,12 @@
 
 .consulta-tipo {
     margin: 0;
-    font-size: 1rem;
+    font-size: .9rem;
     color: var(--cor-secundaria);
 }
 
 .consulta-tempo {
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 500;
     color: var(--cor-primaria);
 }
@@ -75,11 +74,11 @@
 }
 
 .consulta-botoes-video, .consulta-botoes-audio {
-    padding: 1.1rem 1.35rem;
+    padding: 1rem 2.8rem;
     border-radius: .7rem;
     font-family: var(--font-principal);
     font-weight: 500;
-    font-size: 1.15rem;
+    font-size: 0.85rem;
 }
 
 .consulta-botoes-video {
@@ -96,7 +95,7 @@
 
 .consulta-botoes-endereco {
     width: 100%;
-    padding: 1.1rem 0;
+    padding: 1rem 0;
     border-radius: .7rem;
     border: solid 1px var(--cor-botao-endereco);
     font-family: var(--font-principal);
@@ -124,17 +123,17 @@
         border-bottom: none;
     }
 
-    .paciente-descricao {
-        margin: 0;
-    }
-
     .consulta-botoes {
-        gap: 0;
+        gap: .5rem;
     }
     
 }
 
 @media screen and (min-width: 1440px) {
+    .main {
+        margin: 0 0 0 250px;
+    }
+
     .consultas-card {
         width: 25%;
     }
@@ -143,16 +142,7 @@
         margin-right: .7rem;
     }
 
-    .paciente-nome {
-        font-size: 1.5rem;
+    .paciente-nome, .consulta-tipo, .consulta-tempo {
+        font-size: 1rem;
     }
-
-    .consulta-tempo {
-        font-size: 1.15rem;
-    }
-
-    .consulta-botoes-endereco, .consulta-botoes-video, .consulta-botoes-audio {
-        font-size: 1.35rem;
-    }
-    
 }
