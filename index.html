@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AppointmentPage</title>
+    <title>AluraMed</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -276,6 +276,32 @@
     </main>
 
     <footer class="rodape">
+        <form action="" class="form-container">
+            
+            <input type="text" id="nome" name="nome" placeholder="Informe o nome do paciente" pattern="[a-zA-Z\s]+">
+            <label for="nome" id="mensagem-erro">
+                Nome inválido!
+            </label>
+
+
+            <label for="tipo-consulta">Selecione o tipo de consulta
+                <select name="tipo-consulta" id="tipo-consulta" class="rodape__select">
+                    <option value="remoto">Remoto</option>
+                    <option value="local">Local</option>
+                </select>
+            </label>
+
+            <label for="data">Insira a data e hora:
+                <input type="date" name="data-e-hora" id="data">
+                <input type="time" name="data-e-hora" id="hora">
+            </label>
+
+
+            <textarea name="informacoes" id="informacoes" placeholder="Adicione informações extras"></textarea>
+
+            <button class="botao-salvar">Adicionar consulta</button>
+        </form>
+
         <ul class="rodape__lista">
             <li class="lista-item">
                 <img src="./assets/icone-consulta.svg" alt="" class="lista-imagem-consulta">

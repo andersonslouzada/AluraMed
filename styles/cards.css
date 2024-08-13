@@ -132,6 +132,7 @@
 @media screen and (min-width: 1440px) {
     .main {
         margin: 0 0 0 250px;
+        padding: 0;
     }
 
     .consultas-card {
@@ -143,6 +144,6 @@
     }
 
     .paciente-nome, .consulta-tipo, .consulta-tempo {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 }
