@@ -1,7 +1,7 @@
 .rodape {
     position: fixed;
     bottom: 0;
-    width: 100%;
+    /* width: 100%; */
     background: var(--cor-background-secundaria);
     box-shadow: 0px -4px 8px 0px #0000000F;
     border-radius: 1rem 1rem 0 0;
@@ -122,7 +122,69 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .rodape {
+        position: inherit;
+        margin: 0 0 10px 260px;
+        box-shadow: none;
+        border-radius: none;
+    }
+    
     .rodape__lista {
         display: none;
+    }
+
+    .rodape-botao {
+        display: none;
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #nome {
+        padding: 1rem 1rem;
+        width: 240px;
+        font-family: var(--font-principal);
+        font-size: 1.25rem;
+        color: var();
+        text-align: center;
+        border-radius: 8px;
+        border: 1px solid #ECECEC;
+        text-decoration: none;
+    }
+
+    #nome::placeholder {
+        font-size: 1.25rem;
+        text-align: center;
+        color: #CFCFCF;
+    }
+
+    #nome:focus {
+        outline: none;
+        border: 2px solid #4894FF;
+    }
+
+    #nome:invalid {
+        outline: none;
+        border: 2px solid #FF0000;
+    }
+
+    #mensagem-erro {
+        display: none;
+        text-align: center;
+        color: #FF0000;
+        font-size: 1rem;
+    }
+
+    #nome:invalid~#mensagem-erro {
+        display: block;
+    }
+
+    #nome:disabled {
+        background-color: #ECECEC;
     }
 }
