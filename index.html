@@ -279,21 +279,24 @@
         <form action="" class="form-container">
             
             <input type="text" id="nome" name="nome" placeholder="Informe o nome do paciente" pattern="[a-zA-Z\s]+">
-            <label for="nome" id="mensagem-erro">
+            <label for="nome" class="mensagem-erro">
                 Nome inválido!
             </label>
 
 
-            <label for="tipo-consulta">Selecione o tipo de consulta
+            <label for="tipo-consulta">Tipo de consulta
                 <select name="tipo-consulta" id="tipo-consulta" class="rodape__select">
+                    <option value="" disabled selected>Selecione uma opção</option>
                     <option value="remoto">Remoto</option>
                     <option value="local">Local</option>
                 </select>
+                <span class="mensagem-erro">você não selecionou a opção</span>
             </label>
 
-            <label for="data">Insira a data e hora:
-                <input type="date" name="data-e-hora" id="data">
-                <input type="time" name="data-e-hora" id="hora">
+            <label for="data-e-hora">Data e hora:
+                <input type="date" name="data-e-hora" id="data" class="data-hora" min="2024-08-14">
+                <input type="time" name="data-e-hora" id="hora" class="data-hora" min="09:00" max="18:00">
+                <span class="mensagem-erro">Data ou hora inválidas!</span>
             </label>
 
 

@@ -157,34 +157,94 @@
         text-decoration: none;
     }
 
+    .rodape__select {
+        padding: .5rem 1rem;
+        font-family: var(--font-principal);
+        font-size: 1.25rem;
+        color: var();
+        text-align: center;
+        border-radius: 8px;
+        border: 1px solid #ECECEC;
+        text-decoration: none;
+        outline: none;
+    }
+
+    .data-hora {
+        padding: .5rem 1rem;
+        font-family: var(--font-principal);
+        font-size: 1.25rem;
+        color: var();
+        text-align: center;
+        border-radius: 8px;
+        border: 1px solid #ECECEC;
+        text-decoration: none;
+        outline: none;
+    }
+
+    #informacoes {
+        padding: 1rem 1rem;
+        width: 25%;
+        height: 200px;
+        font-family: var(--font-principal);
+        font-size: 1.25rem;
+        color: var();
+        text-align: center;
+        border-radius: 8px;
+        border: 1px solid #ECECEC;
+        text-decoration: none;
+        outline: none;
+    }
+
+    .botao-salvar {
+        padding: 1rem 1rem;
+        width: 240px;
+        font-family: var(--font-principal);
+        font-size: 1.25rem;
+        color: var(--cor-terciaria);
+        text-align: center;
+        border-radius: 8px;
+        border: none;
+        background-color: #4894FF;
+        cursor: pointer;
+    }
+
+    .botao-salvar:hover {
+        background-color: #3A7ABF;
+    }
+
+    .botao-salvar:active {
+        background-color: #2D5D8F;
+    }
+
     #nome::placeholder {
         font-size: 1.25rem;
         text-align: center;
         color: #CFCFCF;
     }
 
-    #nome:focus {
+    #nome:focus, .rodape__select:focus, .data-hora:focus, #informacoes:focus {
         outline: none;
         border: 2px solid #4894FF;
     }
 
-    #nome:invalid {
+    #nome:invalid, .rodape__select:invalid, .data-hora:invalid {
         outline: none;
         border: 2px solid #FF0000;
     }
 
-    #mensagem-erro {
+    .mensagem-erro {
         display: none;
         text-align: center;
         color: #FF0000;
         font-size: 1rem;
     }
 
-    #nome:invalid~#mensagem-erro {
+
+    #nome:invalid~.mensagem-erro, .rodape__select:invalid~.mensagem-erro, .data-hora:invalid~.mensagem-erro {
         display: block;
     }
 
-    #nome:disabled {
+    #nome:disabled, .botao-salvar:disabled, #informacoes:disabled, .data-hora:disabled, .rodape__select:disabled {
         background-color: #ECECEC;
     }
 }
