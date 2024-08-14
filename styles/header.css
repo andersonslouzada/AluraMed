@@ -30,7 +30,7 @@
 
 @media screen and (min-width: 1440px) {
     .cabecalho {
-        margin-left: 260px;
+        margin-left: 17%;
     }
 
     .menu-lateral {
@@ -39,7 +39,7 @@
         align-items: center;
         top: 0;
         left: 0;
-        width: 250px;
+        width: 15%;
         height: 100%;
         background-color: var(--cor-background-secundaria);
         z-index: 1;
